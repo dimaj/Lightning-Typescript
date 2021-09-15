@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sample Project</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" />
+    <script>
+        window.APP_VERSION = '<%= htmlWebpackPlugin.options.version %>';
+    </script>
+</head>
+<body style="margin: 0px;">
+    <% if (htmlWebpackPlugin.options.useInspector) { %>
+        <script type="text/javascript" src="<%= htmlWebpackPlugin.options.ASSET_PATH %>lib/lightning-inspect.js"></script>
+    <% } %>
+</body>
+</html>
